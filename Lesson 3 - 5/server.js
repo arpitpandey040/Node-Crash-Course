@@ -1,11 +1,23 @@
 const http = require("http");
 const fs = require("fs");
+const _ = require("lodash");
 
 const server = http.createServer((req, res) => {
   // console.log(`request made`)/
   // console.log(req)/
-  console.log(req.url, req.method);
-
+  // console.log(req.url, req.method);
+  // lodash
+  const num = _.random(0, 20);
+  console.log(num);
+  // this method helps to call the function only once no matter how many times i call it.
+  const greet = _.once(() => {
+    console.log(`Hello from lodash`);
+  });
+  greet();
+  greet();
+  greet();
+  greet();
+  greet();
   // routing in Node.js
   let path = "./views/";
 
