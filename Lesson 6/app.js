@@ -30,5 +30,5 @@ app.get("/about-us", (req, res) => {
 
 // this should be at the very end otherwise routing pages with manually redirect to 404.
 app.use((req, res) => {
-  res.sendFile("./views/404.html", { root: __dirname });
+  res.status(404).sendFile("./views/404.html", { root: __dirname });
 }); // use is a middleware
