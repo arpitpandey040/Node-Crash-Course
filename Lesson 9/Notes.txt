@@ -1,0 +1,21 @@
+code is in lesson 7
+
+MongoDB -
+
+
+Mongoose- 
+    Mongoose is ODM - Object Document Mapping Library
+
+    schemas & models
+
+        User schemas  
+            -name(string), required
+            -age (number)
+            -bio(string), required
+
+        Blog schema
+            -title(string), required
+            -snippet(string), required
+            -body(string), required
+
+    Models -> models allows us to communicate with particular database collection

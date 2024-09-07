@@ -1,0 +1,28 @@
+middle ware - > 
+    code which runs(on the server) between getting a request and sending a response
+
+
+    app.use(func)
+    app.get('/', func)
+    
+    middleware is executed top to bottom
+    order of the middleware is very important
+
+
+middleware expamples-
+    logger middleware to log details of every request
+    Authentication check middleware for pretected routes
+    Middleware to parse JSON data from requests
+    Return 404 pages
+
+
+code is in lesson 7 
+
+
+using next();
+
+3rd party middleware
+    
+    exmaple - morgan 
+    static files -> we allowed which files can be accessed by the browser since nodejs does not allow frontend to access any files.
+

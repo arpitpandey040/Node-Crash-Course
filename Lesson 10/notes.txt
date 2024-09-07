@@ -1,0 +1,12 @@
+
+
+Request types:
+    get,
+    post,
+    put,
+    delete, 
+
+
+Route parameters: 
+    localhost:3000/blogs/:id -> here id is variable and i can change
+    localhost:3000/blogs/1 -> here id is fixed and i can't change it
